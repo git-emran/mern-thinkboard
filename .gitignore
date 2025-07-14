@@ -1,0 +1,7 @@
+# Ignore node_modules inside backend only
+backend/node_modules/
+
+# Optional but recommended
+*.log
+.env
+dist/
