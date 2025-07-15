@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { title } from "process";
+
 
 const noteSchema = new mongoose.Schema(
   {
