@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5001;
 
 mongoDB();
 
@@ -15,5 +15,5 @@ app.use(express.json());
 app.use("/api/notes", notesRoutes);
 
 app.listen(PORT, () => {
-  console.log("Server Running on PORT:", PORT);
+  console.log(`Server running on PORT:${PORT}`);
 });
