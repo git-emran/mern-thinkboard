@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import Navbar from "../components/Navbar";
+import RateLimitedUI from "../components/RateLimitedUI";
 
 const HomePage = () => {
+  const [isRateLimited, setIsRateLimited] = useState(false);
   return (
-    <div>
-      <h1>HomePage</h1>
+    <div className="min-h-screen">
+      <Navbar />
+      {isRateLimited && <RateLimitedUI />}
     </div>
   );
 };

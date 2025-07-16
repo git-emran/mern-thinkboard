@@ -7,7 +7,6 @@ import NoteDetailsPage from "./pages/NoteDetailsPage";
 const App = () => {
   return (
     <div data-theme="pastel">
-      <button className="btn btn-primary">Click me</button>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/create" element={<CreatePage />} />
